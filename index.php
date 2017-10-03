@@ -1,11 +1,32 @@
-<?php
-	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-		$uri = 'https://';
-	} else {
-		$uri = 'http://';
-	}
-	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/dashboard/');
-	exit;
-?>
-Something is wrong with the XAMPP installation :-(
+<html>
+   
+   <head>
+      <title>Hello World</title>
+   </head>
+   
+   <body>
+      <?php //echo "Hello, World!";
+
+      $b = "HHBaaa";
+      // $c = "0000";
+      // $d = 0000;
+      
+      // echo $b;
+
+      // var_dump($c);die();
+      // var_dump($d);
+
+      for ($i = 0; $i <= 10; $i++){
+      	if ($i % 2 ==0){
+      		echo "haha";
+      	} else if ($i % 3 == 0){
+      		echo "hihi";
+      	}else{
+      		echo "hoho";
+      	}
+      }
+
+      ?>
+   </body>
+
+</html>
